@@ -1,0 +1,9 @@
+version: '2'
+services:
+    logngateway-elasticsearch:
+        image: elasticsearch:2.4.6
+        # volumes:
+        #     - ~/volumes/jhipster/LogNGateway/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
